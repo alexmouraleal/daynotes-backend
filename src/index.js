@@ -7,7 +7,7 @@ require("./config/dbConfig");
 
 app.use(cors());
 
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 9001;
 
 app.use(express.json());
 app.use(routes);
