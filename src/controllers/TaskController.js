@@ -52,6 +52,17 @@ module.exports = {
     return response.json({ taskStatusUpdated });
   },
 
+  async updatewkreset(request, response) {
+    // ** parei aqui
+    const taskStatusWkReset = await Tasks.updateMany({}, { status: "A" });
+
+    // if (taskStatusWkReset) {
+    //   taskStatusWkReset.status = "A";
+    //   taskStatusWkReset.save();
+    // }
+    return response.json({ taskStatusWkReset });
+  },
+
   async delete(request, response) {
     const { id } = request.params;
     console.log(id);
