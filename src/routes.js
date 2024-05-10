@@ -24,6 +24,7 @@ routes.post("/tasks", TaskController.create);
 routes.get("/tasks", TaskController.read);
 routes.post("/tasks/:id", TaskController.update);
 routes.post("/tasksstatus/:id", TaskController.updatestatus);
+routes.post("/taskswkreset", TaskController.updatewkreset);
 routes.delete("/tasks/:id", TaskController.delete);
 
 module.exports = routes;
